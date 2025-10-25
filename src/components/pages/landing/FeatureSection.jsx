@@ -1,0 +1,69 @@
+import React from "react";
+
+export default function FeatureSection() {
+  return (
+    <section className="bg-background-light dark:bg-background-dark py-20 px-4">
+      <div className="max-w-5xl mx-auto flex flex-col gap-12">
+        <div className="flex flex-col gap-4 text-center">
+          <h1 className="text-text-light dark:text-text-dark tracking-tight text-3xl font-bold md:text-4xl">
+            Everything You Need in One Place
+          </h1>
+          <p className="text-slate-600 dark:text-slate-400 text-lg max-w-2xl mx-auto">
+            Our platform is designed to be powerful yet simple, giving your team
+            the tools they need to succeed without the complexity.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="flex flex-col gap-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-card-dark p-6 shadow-sm transition-all hover:shadow-lg hover:-translate-y-1">
+            <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-primary/10 text-primary">
+              <span className="material-symbols-outlined text-3xl text-[#4F46E5] bg-[#4F46E51A] p-2 rounded-lg">
+                inbox
+              </span>
+            </div>
+            <div className="flex flex-col gap-1">
+              <h2 className="text-text-light dark:text-text-dark text-lg font-bold">
+                Centralized Inbox
+              </h2>
+              <p className="text-slate-600 dark:text-slate-400 text-base">
+                Manage all your customer conversations from email, chat, and
+                social media in one unified dashboard.
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-col gap-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-card-dark p-6 shadow-sm transition-all hover:shadow-lg hover:-translate-y-1">
+            <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-primary/10 text-primary">
+              <span className="material-symbols-outlined text-3xl text-[#4F46E5] bg-[#4F46E51A] p-2 rounded-lg">
+                account_tree
+              </span>
+            </div>
+            <div className="flex flex-col gap-1">
+              <h2 className="text-text-light dark:text-text-dark text-lg font-bold">
+                Automated Workflows
+              </h2>
+              <p className="text-slate-600 dark:text-slate-400 text-base">
+                Create powerful automation rules to categorize, assign, and
+                respond to tickets, saving your team valuable time.
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-col gap-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-card-dark p-6 shadow-sm transition-all hover:shadow-lg hover:-translate-y-1">
+            <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-primary/10 text-primary">
+              <span className="material-symbols-outlined text-3xl text-[#4F46E5] bg-[#4F46E51A] p-2 rounded-lg">
+                bar_chart
+              </span>
+            </div>
+            <div className="flex flex-col gap-1">
+              <h2 className="text-text-light dark:text-text-dark text-lg font-bold">
+                Real-time Reporting
+              </h2>
+              <p className="text-slate-600 dark:text-slate-400 text-base">
+                Gain actionable insights into your team's performance and
+                customer satisfaction with our detailed analytics.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
