@@ -72,17 +72,14 @@ export default function Page() {
       <Toaster position="bottom-right" reverseOrder={false} />
 
       <div className="relative flex min-h-screen w-full flex-col items-center justify-start sm:justify-center p-4 sm:p-6 lg:p-8">
-        {/* Form Container */}
         <main className="w-full max-w-2xl">
           <div className="bg-white dark:bg-slate-800/50 rounded-xl shadow-sm border border-slate-200 dark:border-slate-700">
             <div className="p-6 sm:p-8">
-              {/* Header */}
               <h1 className="text-slate-900 dark:text-white tracking-tight text-2xl sm:text-3xl font-bold text-left pb-6">
                 Create New Ticket
               </h1>
 
               <form onSubmit={handleSubmit} className="space-y-6">
-                {/* Title Field */}
                 <div>
                   <label className="flex flex-col" htmlFor="title">
                     <p className="text-slate-700 dark:text-slate-300 text-base font-bold leading-normal pb-2">
@@ -107,7 +104,6 @@ export default function Page() {
                   )}
                 </div>
 
-                {/* Description Field */}
                 <div>
                   <label className="flex flex-col" htmlFor="description">
                     <p className="text-slate-700 dark:text-slate-300 text-base font-bold leading-normal pb-2">
@@ -123,9 +119,7 @@ export default function Page() {
                   </label>
                 </div>
 
-                {/* Priority & Status Fields */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                  {/* Priority */}
                   <div>
                     <label className="flex flex-col" htmlFor="priority">
                       <p className="text-slate-700 dark:text-slate-300 text-base font-bold leading-normal pb-2">
@@ -144,7 +138,6 @@ export default function Page() {
                     </label>
                   </div>
 
-                  {/* Status */}
                   <div>
                     <label className="flex flex-col" htmlFor="status">
                       <p className="text-slate-700 dark:text-slate-300 text-base font-bold leading-normal pb-2">
@@ -168,7 +161,6 @@ export default function Page() {
                   </div>
                 </div>
 
-                {/* Action Buttons */}
                 <div className="flex flex-col-reverse sm:flex-row sm:justify-end gap-3 pt-4">
                   <button
                     type="button"
@@ -216,7 +208,6 @@ export default function Page() {
             </div>
           </div>
 
-          {/* Footer */}
           <footer className="w-full text-center py-8">
             <p className="text-slate-500 dark:text-slate-400 text-sm">
               © 2024 Acme Inc. ·{" "}

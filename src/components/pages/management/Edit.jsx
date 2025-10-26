@@ -42,11 +42,8 @@ export default function Edit({ onClose, ticket = {}, onSave }) {
     <>
       <Toaster position="bottom-right" reverseOrder={false} />
 
-      {/* Overlay */}
       <div className="fixed inset-0 bg-black/40 backdrop-blur-sm flex items-center justify-center z-50">
-        {/* Modal */}
         <div className="font-display bg-gray-100 dark:bg-background-dark text-text-light dark:text-text-dark rounded-2xl shadow-lg w-full max-w-3xl p-6 relative">
-          {/* Header */}
           <header className="flex items-center justify-between border-b border-gray-300 dark:border-gray-700 pb-4">
             <div className="flex items-center">
               <button
@@ -61,9 +58,7 @@ export default function Edit({ onClose, ticket = {}, onSave }) {
             </div>
           </header>
 
-          {/* Form */}
           <form onSubmit={handleSave} className="mt-6 space-y-6">
-            {/* Title */}
             <label className="flex flex-col">
               <p className="text-base font-bold pb-2">
                 Title<span className="text-red-600">*</span>
@@ -79,7 +74,6 @@ export default function Edit({ onClose, ticket = {}, onSave }) {
               {error && <p className="text-sm text-red-600 pt-1">{error}</p>}
             </label>
 
-            {/* Description */}
             <label className="flex flex-col">
               <p className="text-base font-bold pb-2">Description</p>
               <textarea
@@ -90,7 +84,6 @@ export default function Edit({ onClose, ticket = {}, onSave }) {
               ></textarea>
             </label>
 
-            {/* ✅ Status (matches ticket data structure) */}
             <label className="flex flex-col">
               <p className="text-base font-bold pb-2">Status</p>
               <select
@@ -104,7 +97,6 @@ export default function Edit({ onClose, ticket = {}, onSave }) {
               </select>
             </label>
 
-            {/* Buttons */}
             <div className="flex flex-col-reverse sm:flex-row sm:justify-end gap-3 pt-4">
               <button
                 type="button"
