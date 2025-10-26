@@ -10,7 +10,7 @@ export default function DashboardPage() {
   const router = useRouter();
 
   const handleLogout = () => {
-    localStorage.setItem("isLoggedIn", "false");
+    localStorage.setItem("ticketapp_session", "false");
     router.push("/login");
   };
 
