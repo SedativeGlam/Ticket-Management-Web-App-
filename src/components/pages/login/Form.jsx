@@ -52,9 +52,14 @@ export default function Form() {
       password: "password123",
     };
 
+    const usersJson = localStorage.getItem("users");
+    const users = JSON.parse(usersJson) || [];
+
+    const userFound = users.find((item) => item?.email === formData?.email);
+
     if (
-      formData.email === fakeUser.email &&
-      formData.password === fakeUser.password
+      formData.email === (userFound?.email || fakeUser.email) &&
+      formData.password === (userFound?.password || fakeUser.password)
     ) {
       toast.success("Login successful!");
       localStorage.setItem("ticketapp_session", "true");
