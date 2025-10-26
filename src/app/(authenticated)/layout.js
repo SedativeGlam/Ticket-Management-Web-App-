@@ -45,6 +45,7 @@ export default function AuthenticatedLayout({ children }) {
         : [];
     } else {
       localStorage.setItem("default_tickets", JSON.stringify(default_tickets));
+      localStorage.setItem("default_tickets_set", "true");
     }
   };
 
