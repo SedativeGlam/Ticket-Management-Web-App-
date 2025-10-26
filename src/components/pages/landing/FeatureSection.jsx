@@ -49,7 +49,7 @@ export default function FeatureSection() {
           <div className="flex flex-col gap-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-card-dark p-6 shadow-sm transition-all hover:shadow-lg hover:-translate-y-1">
             <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-primary/10 text-primary">
               <span className="material-symbols-outlined text-3xl text-[#4F46E5] bg-[#4F46E51A] p-2 rounded-lg">
-                bar_chart
+                task_alt
               </span>
             </div>
             <div className="flex flex-col gap-1">

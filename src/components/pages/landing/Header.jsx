@@ -11,12 +11,12 @@ export default function Header() {
               confirmation_number
             </span>
             <h2 className="text-text-light dark:text-text-dark text-xl font-bold">
-              SupportFlow
+              TicketSphere
             </h2>
           </div>
           <div className="flex items-center bg-[#4F46E51A] rounded-full">
             <Link href={"/login"}>
-              <button className="text-[#4F46E5] flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-5 bg-primary/10 text-primary text-sm font-bold leading-normal tracking-[0.015em] transition-colors hover:bg-primary/20">
+              <button className="text-[#4F46E5] flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-5 bg-primary/10 text-sm font-bold leading-normal tracking-[0.015em] transition-colors hover:bg-[#463fcf1a]">
                 <span className="truncate">Login</span>
               </button>
             </Link>

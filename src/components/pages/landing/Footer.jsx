@@ -1,4 +1,5 @@
 import React from "react";
+import TicketSphereFooter from "./TicketSphereFooter";
 
 export default function Footer() {
   return (
@@ -7,15 +8,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8 text-center md:text-left">
           <div className="col-span-1 md:col-span-1 flex flex-col gap-2">
             <div className="flex items-center gap-2 justify-center md:justify-start">
-              <span className="material-symbols-outlined text-primary text-2xl">
+              <span className="material-symbols-outlined text-[#4F46e5] text-2xl">
                 confirmation_number
               </span>
               <h2 className="text-text-light dark:text-text-dark text-lg font-bold">
-                SupportFlow
+                TicketSphere
               </h2>
             </div>
             <p className="text-slate-600 dark:text-slate-400 text-sm">
-              The best way to manage support.
+              Stop dreaming, start seeing.
             </p>
           </div>
           <div className="col-span-1">
@@ -88,11 +89,8 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="border-t border-slate-200 dark:border-slate-800 pt-8 text-center">
-          <p className="text-slate-500 dark:text-slate-400 text-sm">
-            © 2024 SupportFlow. All rights reserved.
-          </p>
-        </div>
+
+        <TicketSphereFooter />
       </div>
     </footer>
   );
