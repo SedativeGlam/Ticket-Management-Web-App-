@@ -26,7 +26,7 @@ export default function DashboardPage() {
                   confirmation_number
                 </span>
                 <h1 className="text-slate-900 dark:text-slate-50 text-xl font-bold">
-                  TicketMaster
+                  TicketSphere
                 </h1>
               </div>
               <nav className="hidden items-center gap-6 md:flex">
