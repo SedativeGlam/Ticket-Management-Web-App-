@@ -79,6 +79,7 @@ export default function Form() {
     localStorage.setItem("users", JSON.stringify(users));
 
     toast.success("Account created successfully!");
+    localStorage.setItem("ticketapp_session", "true");
 
     setTimeout(() => router.push("/dashboard"), 2000);
   };
