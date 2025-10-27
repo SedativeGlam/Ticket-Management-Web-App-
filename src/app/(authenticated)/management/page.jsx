@@ -40,12 +40,10 @@ export default function ManageTicket() {
     handleCloseEdit();
   };
 
-  // Show delete confirmation
   const handleConfirmDelete = (ticket) => {
     setDeleteConfirm(ticket);
   };
 
-  // Delete confirmed
   const handleDelete = () => {
     setTickets((prev) => {
       const newTickets = prev.filter((t) => t.id !== deleteConfirm.id);
@@ -55,7 +53,6 @@ export default function ManageTicket() {
     setDeleteConfirm(null);
   };
 
-  // Cancel delete
   const handleCancelDelete = () => {
     setDeleteConfirm(null);
   };
@@ -67,7 +64,6 @@ export default function ManageTicket() {
   return (
     <article className="bg-background-light dark:bg-background-dark font-display text-slate-800 dark:text-slate-200 relative">
       <div className="relative flex min-h-screen w-full flex-col overflow-x-hidden">
-        {/* Header */}
         <header className="sticky top-0 z-10 w-full bg-white/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-slate-200 dark:border-slate-800">
           <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between h-16">
@@ -123,7 +119,6 @@ export default function ManageTicket() {
           </div>
         </header>
 
-        {/* Main Content */}
         <main className="max-w-[1440px] mx-auto w-full px-4 sm:px-6 lg:px-8 py-8">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
             <h1 className="text-slate-900 dark:text-white text-[32px] font-bold tracking-tight">
@@ -140,7 +135,6 @@ export default function ManageTicket() {
             </div>
           </div>
 
-          {/* Ticket Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
             {tickets.map((t) => (
               <div
@@ -235,7 +229,6 @@ export default function ManageTicket() {
             ))}
           </div>
 
-          {/* Edit Modal */}
           {showEdit && selectedTicket && (
             <Edit
               ticket={selectedTicket}
@@ -244,7 +237,6 @@ export default function ManageTicket() {
             />
           )}
 
-          {/* Delete Confirmation Modal */}
           {deleteConfirm && (
             <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50">
               <div className="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-lg text-center w-[90%] max-w-sm">

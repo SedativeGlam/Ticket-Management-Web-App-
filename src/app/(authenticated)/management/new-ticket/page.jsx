@@ -12,11 +12,9 @@ export default function Page() {
   const [error, setError] = useState("");
   const router = useRouter();
 
-  // --- Handle form submission ---
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Validate required fields
     if (!title.trim()) {
       setError("Title is required.");
       toast.error("Title is required.");
@@ -32,7 +30,6 @@ export default function Page() {
     setError("");
     setSaving(true);
 
-    // Simulate creating a ticket
     setTimeout(() => {
       const previousTicketsJson = localStorage?.getItem("default_tickets");
       let previousTickets = JSON?.parse(previousTicketsJson) || [];

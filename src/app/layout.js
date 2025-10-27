@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "SupportFlow - Effortless Ticket Management",
+  title: "TicketSphere",
   description: "Ticket management web app",
 };
 
